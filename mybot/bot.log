@@ -1,0 +1,807 @@
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.updater:Error while getting Updates: urllib3 HTTPError ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 117, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 2725, in get_updates
+    result = self._post(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 235, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x041675C8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x041677C0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167868>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167910>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167910>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167910>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 117, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 2725, in get_updates
+    result = self._post(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 235, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167910>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167A00>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167AC0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167B68>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167C10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167C10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167C10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 117, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 2725, in get_updates
+    result = self._post(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 235, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167C10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167910>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167748>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167CB8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167D60>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167D60>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167D60>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 117, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 2725, in get_updates
+    result = self._post(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 235, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167D60>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167C58>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167E50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167EF8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167FA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167FA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167FA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 117, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 2725, in get_updates
+    result = self._post(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 235, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167FA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C430>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C568>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C610>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C6B8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C6B8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C6B8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 117, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 2725, in get_updates
+    result = self._post(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 235, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C6B8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C028>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C7A8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C850>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0413FEB0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0413FEB0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0413FEB0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 117, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 2725, in get_updates
+    result = self._post(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 235, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0413FEB0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167D78>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167EF8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167E80>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167C40>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167C40>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167C40>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 117, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 2725, in get_updates
+    result = self._post(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 235, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167C40>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167DF0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167C88>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167910>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C688>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C688>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C688>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 117, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 2725, in get_updates
+    result = self._post(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 235, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C688>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x04167478>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C490>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C358>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C8F8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C8F8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C8F8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 117, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 2725, in get_updates
+    result = self._post(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 235, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C8F8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C8C8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5C9E8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+WARNING:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5CA90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5CB38>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5CB38>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5CB38>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 117, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 2725, in get_updates
+    result = self._post(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\bot.py", line 235, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Users\Fenix\AppData\Local\Programs\Python\Python38-32\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1661641222:AAE8vMkxSnY7EPkz4fQEDEZcsZfoBDnUxno/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00A5CB38>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
